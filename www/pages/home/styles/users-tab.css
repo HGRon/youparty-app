@@ -1,0 +1,98 @@
+.users-tab {
+  width: 100%;
+  flex: 1;
+}
+
+.users-tab-container {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.users-tab-container-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3b3b3b;
+
+  padding: .75rem 1.25rem;
+  margin: 0.75rem 0;
+  border-radius: 0.5rem;
+}
+
+.users-tab-container-user-name {
+  color: var(--color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  font-size: 1.6rem;
+}
+
+.users-tab-container-user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.users-tab-container-user-action-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 1.5rem;
+
+  background-color: transparent;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  opacity: .5;
+  transition: all .2s ease-in-out;
+}
+
+.users-tab-container-user-action-icon:hover {
+  opacity: 1;
+}
+
+.users-tab-container-user-action-icon.kick {
+  display: none;
+  background-image: url('../../../assets/you-kick.svg');
+}
+
+.users-tab-container-user-action-icon.host {
+  display: none;
+  background-image: url('../../../assets/you-crown.svg');
+}
+
+.users-tab-container-user-action-icon.host.active {
+  display: block;
+  opacity: 1;
+  background-image: url('../../../assets/you-crown-gold.svg');
+}
+
+.is-host .users-tab-container-user-action-icon.kick, .is-host .users-tab-container-user-action-icon.host {
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) and (orientation: portrait) { 
+  .video-chat {
+    height: 60vh;
+    width: 100vw;
+
+    padding: 0 1rem;
+  }
+
+  .video-chat-header {
+    position: absolute;
+    width: 100%;
+
+    top: -40vh;
+  }
+
+  .video-chat-toggle {
+    display: none;
+  }
+
+  .side-tab {
+    height: calc(100% - 5rem);
+  }
+} 

@@ -1,0 +1,202 @@
+.modal-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  inset: 0;
+
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #232323;
+  border-radius: 1.5rem;
+  width: calc((3 * 13rem) + 15rem);
+  padding: 8rem 5rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+.close-modal img {
+  width: 3rem;
+  height: 3rem;
+  transition: all ease-in-out .3s;
+  padding: .5rem;
+}
+
+.close-modal img:hover {
+  transform: scale(1.2);
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+}
+
+.close-modal img:active {
+  background-color: #808080;
+}
+
+
+.modal-search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.modal-search input {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  margin: 1.6rem 0;
+  padding-left: 1rem;
+  outline: none;
+  color: #808080;
+  font-size: 1.7rem;
+  background: #3b3b3b;
+  box-shadow: inset 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+
+.modal-search input::placeholder {
+  color: #808080;
+}
+
+.modal-search button {
+  box-sizing: border-box;
+  border: none;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  background-color: #DA3A3A;
+  height: 4rem;
+  width: 4rem;
+  padding: .5rem;
+  border-radius: 1rem;
+}
+
+.modal-search button img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.modal-search button:active {
+  opacity: .5;
+}
+
+.modal-search button:hover {
+  cursor: pointer;
+}
+
+
+/* ////////// */
+
+.modal-video-list {
+  display: flex;
+  justify-content: space-between;
+  width: calc((3 * 13rem) + 5rem);
+}
+
+.modal-video-list.loading {
+  animation: video-loading 0.5s ease-in-out infinite alternate;
+}
+
+.video-item-card {
+  display: block;
+  width: 14rem;
+
+  background: #3B3B3B;
+  color: #fff;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.video-item-card-image {
+  position: relative;
+  height: 11rem;
+  width: 14rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.video-item-card-time {
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem;
+  padding: .2rem .7rem;
+  border-radius: .3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.video-item-card-title {
+  display: -webkit-box;
+  color: white;
+  font-size: 1.3rem;
+  margin: .5rem;
+  max-width: 13rem;
+  text-overflow: ellipsis;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.d-none {
+  display: none;
+}
+
+@keyframes video-loading {
+  from { opacity: 0.5; }
+  to { opacity: 0.9; }
+}
+
+@media (max-width: 750px) {
+  .modal {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .modal-video-list {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .video-item-card {
+    margin-bottom: 1.5rem;
+    display: flex;
+    width: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+  }
+
+  .video-item-card-title {
+    max-width: auto;
+    flex: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .video-item-card-image {
+    width: 10.5rem;
+    height: 8.25rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .video-item-card-image {
+    display: none;
+  }
+}

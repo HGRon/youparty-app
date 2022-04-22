@@ -1,0 +1,164 @@
+.video-chat {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+  height: 100vh;
+  width: 23%;
+  background-color: #232323;
+}
+
+.hidden-chat {
+  transition: all 0.3s ease-in-out;
+  margin-right: -23%;
+}
+
+.video-chat-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  height: 9.5rem;
+  width: 3.9rem;
+  left: -3.75rem;
+
+  background-image: url("../../../assets/you-toggle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor:pointer;
+}
+
+.video-chat-toggle:hover img {
+  transition: all 0.3s ease-in-out;
+}
+
+.video-chat-toggle:active img {
+  opacity: 0.7;
+}
+
+.invert-arrow {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.video-chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 9.5rem;
+  padding: 0 1.6rem 0 2rem;
+}
+
+.video-chat-header img {
+  min-height: 2.2rem;
+  height: 5vh;
+  max-height: 5.2rem;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.video-chat-header .quit:hover {
+  transition: all 0.1s ease-in-out;
+
+  height: 100%;
+  object-fit: cover;
+
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.video-chat-buttons {
+  display: flex;
+  padding: 0 1.5rem;
+}
+
+.video-chat-button {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5rem;
+
+  color: white;
+  border: 0;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.video-chat-button h4 {
+  margin: 0;
+  font-size: 0;
+  line-height: 2.1rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.video-chat-button svg {
+  height: 1.6rem;
+  margin: .5rem;
+}
+
+.video-chat-button:hover h4, .video-chat-button.tab-active h4 {
+  font-size: 1.5rem;
+}
+
+.video-chat-button.tab-active {
+  background-color: #4b4b4b;
+  color: #3ada62;
+}
+
+.video-chat-button.tab-active h4 {
+  color: #3ada62;
+}
+
+.side-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  height: calc(100% - 14rem);
+  padding: 1.6rem;
+  background-color: transparent;
+}
+
+.hide-tab {
+  display: none;
+}
+
+@media (max-width: 800px) and (orientation: portrait) { 
+  .video-chat {
+    height: 60vh;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .video-chat-header {
+    position: absolute;
+    width: 100%;
+    max-width: 100vw;
+
+    top: -40vh;
+    right: 0;
+  }
+
+  .video-chat-buttons {
+    padding-top: 1rem;
+  }
+
+  .video-chat-toggle {
+    display: none;
+  }
+
+  .side-tab {
+    height: calc(100% - 6rem);
+  }
+} 

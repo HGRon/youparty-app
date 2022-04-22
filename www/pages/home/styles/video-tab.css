@@ -1,0 +1,70 @@
+/* .video-tab {
+  
+} */
+
+.video-tab-button {
+  background: none;
+  border: none;
+  width: 90%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+  border-radius: 1rem;
+  background-color: #3b3b3b;
+}
+
+.video-tab-button:active {
+  opacity: .5;
+}
+
+.video-tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.video-tab-content::-webkit-scrollbar-thumb {
+  background: #232323;
+  border-radius: 1.6rem;
+}
+
+div.video-tab-content::-webkit-scrollbar-thumb {
+  background: #616161;
+}
+
+.video-tab-content::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.video-tab-controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.video-tab-controls .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b3b3b;
+  border-radius: 1rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.video-tab-controls .button img {
+  width: 2rem;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

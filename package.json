@@ -1,0 +1,27 @@
+{
+  "name": "youparty",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r You Party, where you see every thing with your friends in real time\r </p>\r YouParty é uma aplicação para pessoas que desejam assistir vídeos do youtube com os amigos de forma rápida e fácil. O projeto consiste em utilizar o Socket.io para minimizar as diferenças entre os mecanismos de transportes, tornando possível uma comunicação de forma rápida e eficiente entre o navegador e o servidor.",
+  "main": "index.js",
+  "dependencies": {
+    "@capacitor/android": "^3.5.0",
+    "@capacitor/core": "^3.5.0",
+    "init": "^0.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HGRon/youparty-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HGRon/youparty-app/issues"
+  },
+  "homepage": "https://github.com/HGRon/youparty-app#readme"
+}

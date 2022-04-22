@@ -1,0 +1,44 @@
+
+.floating-code {
+  position: fixed;
+
+  height: fit-content;
+  width: fit-content;
+  padding: 0 1.5rem;
+  bottom: 5rem;
+  left: 0;
+
+  min-width: 12rem;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.floating-code span, .floating-code .room-code {
+  transition: all 0.1s linear;
+
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-shadow: 0 0.88em 2em rgba(0, 0, 0, 0.25);
+}
+
+.floating-code:hover span, .floating-code .room-code {
+  opacity: 0.25;
+  max-width: 10rem;
+}
+
+.floating-code:hover span {
+  opacity: 0.8;
+}
+
+.floating-code span, .floating-code:hover .room-code {
+  opacity: 0;
+  max-width: 0;
+}
+
+.floating-code:active span {
+  opacity: 0.7;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../styles/style.css">
+
+    <link rel="stylesheet" href="./styles/home.css">
+
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/chat-tab.css">
+    <link rel="stylesheet" href="./styles/video-tab.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/messages.css">
+    <link rel="stylesheet" href="./styles/float-code.css">
+    <link rel="stylesheet" href="./styles/users-tab.css">
+
+    <script type="text/javascript" defer="defer" src="./scripts/utils.js"></script>
+    <script type="text/javascript" defer="defer" src="./scripts/player.js"></script>
+    <script type="text/javascript" defer="defer" src="./scripts/home.js"></script>
+    <script type="text/javascript" defer="defer" src="./scripts/chat.js"></script>
+    <script type="text/javascript" defer="defer" src="./scripts/users.js"></script>
+    <script type="text/javascript" defer="defer" src="./scripts/queue.js"></script>
+    <script type="text/javascript" defer="defer" src="./scripts/modal.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      
+      <!-- floating button to copy room code -->
+      <div class="floating-code">
+        <span class="room-code"></span>
+        <span>COPY</span>
+      </div>
+
+      <!-- where the video is loaded -->
+      <div class="video-player" id="video-player"></div>
+
+      <!-- sidebar -->
+      <div class="video-chat" id="video-chat">
+
+        <div class="video-chat-toggle">
+          <img src="../../assets/you-arrow.svg" alt="arrow" id="toggle"/>
+        </div>
+
+        <div class="video-chat-header">
+          <img src="../../assets/you-logo.svg" alt="logo" class="logo">
+          <img src="../../assets/you-quit.svg" alt="quit" class="quit">
+        </div>
+
+        <!-- tabs buttons -->
+        <div class="video-chat-buttons">
+
+          <button data-target="chat-tab" class="video-chat-button">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9">
+              <path d="M6.163 8.046c-1.329-.041-2.592-.073-3.856-.12C2.035 7.915.53 9 .108 9c-.422 0 .543-1.59.366-2.065-.142-.383-.193-.777-.23-1.178A22.02 22.02 0 0 1 .2 2.93C.225 2.4.24 1.863.385 1.347.474 1.04.581.737.84.514c.272-.237.591-.379.954-.394C2.79.072 3.783.014 4.78.005 6.119-.01 7.46.009 8.802.034c.58.011 1.163.04 1.738.113.526.067.92.351 1.129.847.16.38.22.78.255 1.185.091 1.016.094 2.032.042 3.048-.025.516-.05 1.034-.202 1.537-.172.576-.538.957-1.147 1.088a4.36 4.36 0 0 1-.726.076c-1.266.043-2.53.082-3.728.118Z"
+              fill="currentColor"/>
+            </svg>
+            <h4>Chat</h4>
+          </button>
+
+          <button data-target="video-tab" class="video-chat-button">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10">
+              <path d="M7.09 9.839c-1.574-.05-3.07-.089-4.566-.146a5.182 5.182 0 0 1-.964-.138C.97 9.417.562 9.062.353 8.48.185 8.012.124 7.53.08 7.04a27.807 27.807 0 0 1-.05-3.456c.028-.65.045-1.305.218-1.936C.353 1.27.48.9.785.628c.323-.289.7-.463 1.13-.482C3.095.088 4.271.016 5.45.006 7.037-.011 8.626.01 10.213.04c.686.014 1.378.05 2.058.138.623.083 1.089.43 1.337 1.036.19.466.261.953.303 1.45.107 1.242.11 2.484.05 3.727-.031.63-.061 1.264-.24 1.879-.204.705-.637 1.17-1.359 1.33-.28.061-.573.083-.86.094-1.498.053-2.994.1-4.413.144ZM5.565 6.706c1.256-.65 2.498-1.295 3.766-1.953-1.265-.662-2.507-1.309-3.766-1.967v3.92Z"
+              fill="currentColor" />
+            </svg>
+            <h4>Videos</h4>
+          </button>
+
+          <button data-target="users-tab" class="video-chat-button">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10">
+              <path d="M12.714 8.5H16c0-1.06-.316-2.078-.879-2.828a3.042 3.042 0 0 0-1.117-.942A2 2 0 0 0 13 1a2 2 0 0 0-1.004 3.73 2.85 2.85 0 0 0-.768.542c.106.135.209.276.308.425.532.798.932 1.758 1.178 2.803ZM4.772 5.272a2.85 2.85 0 0 0-.769-.542 2 2 0 1 0-2.006 0c-.417.198-.8.517-1.118.942C.316 6.422 0 7.439 0 8.5h3.286c.246-1.045.646-2.005 1.178-2.803.1-.149.202-.29.308-.425ZM12 10c0-1.459-.421-2.858-1.172-3.89C10.078 5.08 9.061 4.5 8 4.5c-1.06 0-2.078.58-2.828 1.61C4.422 7.143 4 8.542 4 10h8Z"
+              fill="currentColor" />
+              <path d="M10.25 2.75a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+              fill="currentColor" />
+            </svg>
+            <h4>Users</h4>
+          </button>
+
+        </div>
+
+        <!-- messages tab -->
+        <div class="side-tab chat-tab">
+
+          <div class="chat-tab-content" id="chat-tab-content"></div>
+
+          <form class="chat-tab-input">
+            <input type="text" name="message" maxlength="140" autocomplete="off">
+            <button type="submit">
+              <img src="../../assets/you-send.svg" alt="send-message">
+            </button>
+          </form>
+
+        </div>
+
+        <!-- video queue tab -->
+        <div class="side-tab video-tab">
+
+          <button class="video-tab-button">
+            Add a video
+          </button>
+
+          <div class="video-tab-controls">
+            <div id="ctrl-minus15" class="button">
+              <img src="../../assets/you-backward15.svg">
+            </div>
+            <div id="ctrl-pause" class="button">
+              <img src="../../assets/you-pause.svg">
+            </div>
+            <div id="ctrl-resume" class="button">
+              <img src="../../assets/you-playing.svg">
+            </div>
+            <div id="ctrl-plus15" class="button">
+              <img src="../../assets/you-forward15.svg">
+            </div>
+            <div id="ctrl-skip" class="button">
+              <img src="../../assets/you-skip.svg">
+            </div>
+          </div>
+
+          <div class="video-tab-content" id="video-tab-content"></div>
+
+        </div>
+
+        <!-- user list tab -->
+        <div class="side-tab users-tab">
+
+          <div class="users-tab-container"></div>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Modal to search videos -->
+    <div class="modal-container d-none" id="add-video-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <img src="../../assets/you-close.svg" alt="Fechar"/>
+        </div>
+        <form class="modal-search">
+          <input type="text" placeholder="YOUTUBE SEARCH" name="query" autocomplete="off" />
+          <button>
+            <img alt="Search" src="../../assets/you-search.svg"/>
+          </button>
+        </form>
+        <div class="modal-video-list"></div>
+      </div>
+    </div>
+  </body>
+</html>
+

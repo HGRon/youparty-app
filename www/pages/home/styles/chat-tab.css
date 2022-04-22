@@ -1,0 +1,79 @@
+.chat-tab-content {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat-tab-content::-webkit-scrollbar-thumb {
+  background: #232323;
+  border-radius: 1.6rem;
+}
+
+div.chat-tab-content::-webkit-scrollbar-thumb {
+  background: #616161;
+}
+
+.chat-tab-content::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.chat-tab-input {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  min-height: 5.5rem;
+  width: 100%;
+  margin: 0;
+
+  background: #3b3b3b;
+  box-shadow: inset 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+
+.chat-tab-input input {
+  height: calc(100% - 1rem);
+  width: calc(100% - 1rem);
+  margin: 0.5rem;
+
+  background: transparent;
+  color: white;
+  font-size: 1.6rem;
+  border: 0;
+  outline: 0;
+  padding: 0 1.6rem;
+}
+
+.chat-tab-input button {
+  height: calc(100% - 1rem);
+  width: 4.098rem;
+  padding: 1rem 1rem 1rem 0.85rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.chat-tab-input button img {
+  transition: all 0.1s ease-in-out;
+
+  height: 100%;
+  object-fit: cover;
+}
+
+.chat-tab-input button:hover img {
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.1);
+
+  height: 100%;
+  object-fit: cover;
+}
+
+.chat-tab-input button:active img {
+  opacity: 0.7;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../styles/style.css">
+
+    <link rel="stylesheet" href="./login.css">
+
+    <script type="text/javascript" defer="defer" src="./login.js"></script>
+  </head>
+  <body>
+    <div class="non-dragable" style="isolation: isolate;">
+
+      <video autoplay muted loop id="video" class="background-video">
+        <source src="../../assets/you-background-video.mp4" type="video/mp4">
+      </video>
+
+      <section class="section">
+        <header class="header">
+          <img class="non-select non-dragable" alt="YouParty logo" src="../../assets/you-logo.svg"/>
+        </header>
+        <main class="main">
+          <aside class="aside">
+            <span class="aside-title non-select">Watch videos with your friends in real time</span>
+          </aside>
+          <aside class="aside">
+            <div class="login-card">
+
+              <div class="login-card-step" id="step-menu">
+                <button id="open-create-room">Create a room</button>
+                <button id="open-join-room">Join a room</button>
+              </div>
+
+              <div class="login-card-step" id="step-room-details">
+
+                <span class="login-card-title non-select">Room Details</span>
+
+                <form id="login-card-form">
+                  <input type="text" maxlength="30" class="input input-username"
+                    placeholder="NICKNAME" autocomplete="off">
+                  <input type="text" maxlength="10" class="input input-code"
+                    placeholder="ROOM CODE" autocomplete="off">
+
+                  <div class="login-card-buttons">
+                    <button class="login-card-button">
+                      Continue
+                      <img class="next" src="../../assets/you-next.svg">
+                    </button>
+
+                    <button class="login-card-button" id="open-menu">Back</button>
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+          </aside>
+        </main>
+      </section>
+    </div>
+  </body>
+</html>  
