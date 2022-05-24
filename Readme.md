@@ -13,7 +13,7 @@ e adcionado capacitor e gerado app android.
 
 ## Descrição
 
-O aplicativo se trata de uma plataforma onde é possivel dentro de salas colocar videos do youtube e sincronamente assitir com todos integrantes presentes na sala. Junto com isso existem varias funcionalidade possiveis, como mandar mensagem em tempo real, promever usuarios a admin (caso ele seja admin), pausar o video para todos (caso ele seja admin), pular video e avançar video. Vale ressaltar que projeto já está 90% concluido, faltando apenas um ajuste na modal de adicionar video, e mostrar codigo da sala quando o celular se encontra em 'portrait' (em 'landscape' é possivel ver o codigo da sala para compartilhar com outras pessoas). 
+O aplicativo se trata de uma plataforma onde é possível dentro de salas colocar vídeos do youtube e sincronamente assistir com todos integrantes presentes na sala. Junto com isso existem várias funcionalidades possíveis, como mandar mensagem em tempo real, promover usuários a admin (caso ele seja admin), pausar o vídeo para todos (caso ele seja admin), pular vídeo e avançar vídeo. Vale ressaltar que o projeto já está 90% concluído, faltando apenas um ajuste na modal de adicionar vídeo e poder mostrar código da sala quando o celular se encontra em 'portrait' (em 'landscape' é possível ver o código da sala para compartilhar com outras pessoas).
 
 ## Principais telas
 
