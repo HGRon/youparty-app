@@ -11,7 +11,11 @@ e adcionado capacitor e gerado app android.
 - Gustavo Moreira de Mello - 180525 - CP110TIN1, PA038TIN1
 - Leonardo José Ferreira Corrêa - 210726 - CP110TIN2, PA038TIN3
 
-## Descrição
+## Descrição 06/06/2022
+
+O aplicativo se trata de uma plataforma onde é possível dentro de salas colocar vídeos do youtube e sincronamente assistir com todos integrantes presentes na sala. Junto com isso existem várias funcionalidades possíveis, como mandar mensagem em tempo real, promover usuários a admin (caso ele seja admin), pausar o vídeo para todos (caso ele seja admin), pular vídeo e avançar vídeo. Vale ressaltar que o projeto já está 100% concluído, com todas sugestão feitas na descrição do dia 31/05/2022 já concluidas. 
+
+## Descrição 31/05/2022
 
 O aplicativo se trata de uma plataforma onde é possível dentro de salas colocar vídeos do youtube e sincronamente assistir com todos integrantes presentes na sala. Junto com isso existem várias funcionalidades possíveis, como mandar mensagem em tempo real, promover usuários a admin (caso ele seja admin), pausar o vídeo para todos (caso ele seja admin), pular vídeo e avançar vídeo. Vale ressaltar que o projeto já está 90% concluído, faltando apenas um ajuste na modal de adicionar vídeo e poder mostrar código da sala quando o celular se encontra em 'portrait' (em 'landscape' é possível ver o código da sala para compartilhar com outras pessoas).
 
