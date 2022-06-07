@@ -6,7 +6,7 @@ e adcionado capacitor e gerado app android.
 
 # Download do APK
 
-https://we.tl/t-wtYrtwGwE3 (valido até 13/06/2022)
+[APK 1.1.2 - DOWNLOAD](https://we.tl/t-sTmqpkJGFp) (valido até 13/06/2022)
 
 ## Developed by
 - Flávio José Lucas da Silva - 190847 - CP110TIN2, PA038TIN3
