@@ -163,7 +163,8 @@
 
 @media (max-width: 750px) {
   .modal {
-    width: 100%;
+    width: 90%;
+    padding: 7rem 1rem;
     border-radius: 0;
   }
 }
