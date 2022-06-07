@@ -11,23 +11,27 @@ e adcionado capacitor e gerado app android.
 - Gustavo Moreira de Mello - 180525 - CP110TIN1, PA038TIN1
 - Leonardo José Ferreira Corrêa - 210726 - CP110TIN2, PA038TIN3
 
-## Descrição
+## Descrição 06/06/2022
+
+O aplicativo se trata de uma plataforma onde é possível dentro de salas colocar vídeos do youtube e sincronamente assistir com todos integrantes presentes na sala. Junto com isso existem várias funcionalidades possíveis, como mandar mensagem em tempo real, promover usuários a admin (caso ele seja admin), pausar o vídeo para todos (caso ele seja admin), pular vídeo e avançar vídeo. Vale ressaltar que o projeto já está 100% concluído, com todas sugestão feitas na descrição do dia 31/05/2022 já concluidas. 
+
+## Descrição 31/05/2022
 
 O aplicativo se trata de uma plataforma onde é possível dentro de salas colocar vídeos do youtube e sincronamente assistir com todos integrantes presentes na sala. Junto com isso existem várias funcionalidades possíveis, como mandar mensagem em tempo real, promover usuários a admin (caso ele seja admin), pausar o vídeo para todos (caso ele seja admin), pular vídeo e avançar vídeo. Vale ressaltar que o projeto já está 90% concluído, faltando apenas um ajuste na modal de adicionar vídeo e poder mostrar código da sala quando o celular se encontra em 'portrait' (em 'landscape' é possível ver o código da sala para compartilhar com outras pessoas).
 
 ## Principais telas
 
 # Tela de criar nova sala (basta apenas colocar seu nome que dentro da sala será gerado um codigo)
-![image](https://user-images.githubusercontent.com/52553781/170142248-41f914a6-0376-415e-9c08-e128901f2593.png)
+![image](https://user-images.githubusercontent.com/52553781/170142248-41f914a6-0376-415e-9c08-e128901f2593.png | width=120)
 
 # Tela de adicionar video 
-![image](https://user-images.githubusercontent.com/52553781/170142384-7af647ae-cf90-4e9f-8baa-955d76c1057a.png)
+![image](https://user-images.githubusercontent.com/52553781/170142384-7af647ae-cf90-4e9f-8baa-955d76c1057a.png | width=120)
 
 # Tela de mensagem com video rodando
-![image](https://user-images.githubusercontent.com/52553781/170142456-bc001673-d911-4668-9007-090d807309e4.png)
+![image](https://user-images.githubusercontent.com/52553781/170142456-bc001673-d911-4668-9007-090d807309e4.png | width=120)
 
 #Tela de lista de usuarios
-![image](https://user-images.githubusercontent.com/52553781/170142510-9402f77d-05fd-47ad-8370-95fdfa0c051e.png)
+![image](https://user-images.githubusercontent.com/52553781/170142510-9402f77d-05fd-47ad-8370-95fdfa0c051e.png | width=120)
 
 ## Como rodar o projeto
 
