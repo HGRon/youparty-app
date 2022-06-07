@@ -26,16 +26,16 @@ O aplicativo se trata de uma plataforma onde é possível dentro de salas coloca
 ## Principais telas
 
 # Tela de criar nova sala (basta apenas colocar seu nome que dentro da sala será gerado um codigo)
-![image](https://user-images.githubusercontent.com/52553781/170142248-41f914a6-0376-415e-9c08-e128901f2593.png)
+<img src="https://user-images.githubusercontent.com/52553781/170142248-41f914a6-0376-415e-9c08-e128901f2593.png" width="250"/>
 
 # Tela de adicionar video 
-![image](https://user-images.githubusercontent.com/52553781/170142384-7af647ae-cf90-4e9f-8baa-955d76c1057a.png)
+<img src="https://user-images.githubusercontent.com/52553781/170142384-7af647ae-cf90-4e9f-8baa-955d76c1057a.png" width="250"/>
 
 # Tela de mensagem com video rodando
-![image](https://user-images.githubusercontent.com/52553781/170142456-bc001673-d911-4668-9007-090d807309e4.png)
+<img src="https://user-images.githubusercontent.com/52553781/170142456-bc001673-d911-4668-9007-090d807309e4.png" width="250"/>
 
-#Tela de lista de usuarios
-![image](https://user-images.githubusercontent.com/52553781/170142510-9402f77d-05fd-47ad-8370-95fdfa0c051e.png)
+# Tela de lista de usuarios
+<img src="https://user-images.githubusercontent.com/52553781/170142510-9402f77d-05fd-47ad-8370-95fdfa0c051e.png" width="250"/>
 
 ## Como rodar o projeto
 
@@ -54,7 +54,7 @@ O aplicativo se trata de uma plataforma onde é possível dentro de salas coloca
 
 - Entre na pasta www, onde se localiza todo a base HTML e css do projeto, com auxilio de um navagador basta abrir o HTML index.html usando a extenção LiveServer https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer, seguindo a imagem abaixo:
 
-![image](https://user-images.githubusercontent.com/52553781/172271361-81787b4d-d4c8-42ea-8e49-343f82d8e3aa.png)
+<img src="https://user-images.githubusercontent.com/52553781/172271361-81787b4d-d4c8-42ea-8e49-343f82d8e3aa.png" width="400" />
 
 # Para rodar a aplicação no celular e gerar uma apk
 
