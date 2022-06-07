@@ -42,3 +42,9 @@
 .floating-code:active span {
   opacity: 0.7;
 }
+
+@media (max-width: 590px) {
+  .floating-code {
+    top: calc(40vh - 4rem);
+  }
+}
