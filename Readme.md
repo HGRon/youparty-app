@@ -52,7 +52,7 @@ O aplicativo se trata de uma plataforma onde é possível dentro de salas coloca
 
 # Para rodar a apliacação na WEB
 
-- Entre na pasta www, onde se localiza todo a base HTML e css do projeto, com auxilio de um navagador basta abrir o HTML index.html usando a extenção LiveServer https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer, seguindo a imagem abaixo:
+- Entre na pasta www, onde se localiza todo a base HTML e css do projeto, com auxilio de um navagador basta abrir o HTML index.html usando a extensão LiveServer https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer, seguindo a imagem abaixo:
 
 <img src="https://user-images.githubusercontent.com/52553781/172271361-81787b4d-d4c8-42ea-8e49-343f82d8e3aa.png" width="400" />
 
